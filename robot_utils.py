@@ -92,4 +92,4 @@ def getBodyJacobianOrientedLikeSpatialFrame(q):
     bodyJ[:,1] = getAdjoint(TF_H2) @ rot_axis2
     bodyJ[:,2] = getAdjoint(TF_K) @ rot_axis3
 
-    return (getAdjoint(TS_F_notranslate) @ bodyJ)[3:,:]
+    return (getAdjoint(TS_F_notranslate) @ bodyJ)
